@@ -1,0 +1,181 @@
+html,
+body{
+    padding: 0;
+    margin: 0;
+}
+
+nav.top-menu{
+    background-color: black;
+    margin-top: -16px;
+}
+
+nav.top-menu ul {
+    padding: 12px;
+}
+nav.top-menu ul li{
+    list-style: none;
+    display: inline;
+    margin-inline: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+nav.top-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+nav.middle-menu {
+    mask-position: top;
+    background: white;
+    padding: 0.5px;
+    margin-top: -15px;
+}
+
+nav.middle-menu ul li{
+    list-style: none;
+    display: inline;
+    
+}
+
+nav.middle-menu ul li a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: grey;
+
+}
+
+section.banner{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.menu-wrap {
+    display: none;
+}
+
+@media all and (max-width: 768px){
+    
+    body {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 0.9rem;
+    }
+
+    nav.top-menu{
+        display: none;
+    }
+    nav.middle-menu {
+        display: none;
+    }
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    main{
+        margin: 10px;
+    }
+    section.banner {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .gridHeight {
+        grid-column: 1 / -1;
+        height: inherit;
+        color: white;
+    }
+    figure.main-banner {
+        
+        background-color: blue;
+        height: 150px;
+        margin: 0;
+
+    }
+
+    figure.top-banner {
+        
+        background-color: khaki;
+        margin: 0;
+    }
+
+    figure.lower-banner {
+       
+        background-color: lawngreen;
+        margin: 0;
+    }
+
+    .menu-wrap .hamburger {
+        display: inline-block;
+        width: 100%;
+        z-index: 1;
+        background: orangered;
+
+    }
+
+    section.latest-news figure {
+        margin: 35px 0 24px 0;
+        padding: 0;
+        
+    }
+
+    section.latest-news > figure > a > img {
+        width: 45px;
+    }
+
+    section.latest-news figure figcaption {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: smaller;
+        float: right;
+        width: 85%;
+        
+    }
+    section.latest-news figure img,figcaption {
+        display: inline;
+        vertical-align: top;
+    }
+
+    article-titles {
+
+    }
+
+    .article-titles {
+        font-size: 1.5rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #f33404;
+    }
+    .article-titles:hover {
+       color: inherit;
+    }
+
+    .funding nav ul {
+        padding: 0;
+        margin: 25px 0 15px 0;
+    }
+
+    .funding nav ul li {
+        list-style: none;
+        color: #f33404;
+    }
+
+    .funding nav ul li:hover {
+        color: black;
+    }
+    
+    .link-apps {
+        border-bottom: 0.5px solid grey;
+    }
+
+    .text {
+        
+    }
+
+}
