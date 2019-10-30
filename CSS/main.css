@@ -15,7 +15,7 @@ nav.top-menu ul {
 nav.top-menu ul li{
     list-style: none;
     display: inline;
-    margin-inline: 10px;
+
 }
 
 a {
@@ -28,9 +28,6 @@ nav.top-menu ul li a{
     font-size: 12px;
 }
 
-body{
-    background-color: whitesmoke;
-}
 
 nav.middle-menu {
     mask-position: top;
@@ -42,7 +39,7 @@ nav.middle-menu {
 nav.middle-menu ul li{
     list-style: none;
     display: inline;
-    
+
 }
 
 nav.middle-menu ul li a{
@@ -62,11 +59,16 @@ section.banner{
     display: none;
 }
 
+footer {
+    background-color: rgb(53, 53, 53);
+}
+
 @media all and (max-width: 768px){
-    
+
     body {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 0.9rem;
+
     }
 
     nav.top-menu{
@@ -79,11 +81,12 @@ section.banner{
     body {
         padding: 0;
         margin: 0;
+
     }
     main{
         margin: 10px;
     }
-    section.banner {
+    /* section.banner {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
     }
@@ -94,25 +97,54 @@ section.banner{
         color: white;
     }
     figure.main-banner {
-        
-        background-color: blue;
+
+        background-color: rgb(160, 160, 160);
         height: 150px;
         margin: 0;
 
     }
 
     figure.top-banner {
-        
+
         background-color: khaki;
         margin: 0;
     }
 
     figure.lower-banner {
-       
+
         background-color: lawngreen;
         margin: 0;
+    } */
+
+    section.banner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .banner-link {
+        grid-column: 1 / -1;
+        min-height: 250px;
+        min-width: 100%;
+     }
+
+     .a {
+        background-color: blue;
+
+     }
+
+     .b {
+        background-color: cornflowerblue;
+     }
+
+     .c {
+         background-color: darkcyan;
+     }
+
+     .text {
+        color: white;
+        position: relative;
+        top: 90px;
+     }
     .menu-wrap .hamburger {
         display: inline-block;
         width: 100%;
@@ -124,7 +156,7 @@ section.banner{
     section.latest-news figure {
         margin: 35px 0 24px 0;
         padding: 0;
-        
+
     }
 
     section.latest-news > figure > a > img {
@@ -136,7 +168,7 @@ section.banner{
         font-size: smaller;
         float: right;
         width: 85%;
-        
+
     }
     section.latest-news figure img,figcaption {
         display: inline;
@@ -169,13 +201,15 @@ section.banner{
     .funding nav ul li:hover {
         color: black;
     }
-    
-    .link-apps {
-        border-bottom: 0.5px solid grey;
+
+    li.gear-list {
+        border-bottom:1px solid grey;
+        border-bottom-width: thin;
+        padding: 12px;
     }
 
-    .text {
-        
+    footer {
+        background-color: rgb(53, 53, 53);
     }
 
 }
