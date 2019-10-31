@@ -1,10 +1,10 @@
 html,
-body{
+body {
     padding: 0;
     margin: 0;
 }
 
-nav.top-menu{
+nav.top-menu {
     background-color: black;
     margin-top: -16px;
 }
@@ -12,22 +12,22 @@ nav.top-menu{
 nav.top-menu ul {
     padding: 12px;
 }
-nav.top-menu ul li{
+
+nav.top-menu ul li {
     list-style: none;
     display: inline;
-
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
-nav.top-menu ul li a{
+
+nav.top-menu ul li a {
     text-decoration: none;
     color: white;
     font-size: 12px;
 }
-
 
 nav.middle-menu {
     mask-position: top;
@@ -36,20 +36,18 @@ nav.middle-menu {
     margin-top: -15px;
 }
 
-nav.middle-menu ul li{
+nav.middle-menu ul li {
     list-style: none;
     display: inline;
-
 }
 
-nav.middle-menu ul li a{
+nav.middle-menu ul li a {
     font-size: 0.7rem;
     text-decoration: none;
     color: grey;
-
 }
 
-section.banner{
+section.banner {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-row-gap: 5px;
@@ -63,15 +61,12 @@ footer {
     background-color: rgb(53, 53, 53);
 }
 
-@media all and (max-width: 768px){
-
+@media all and (max-width: 768px) {
     body {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
         font-size: 0.9rem;
-
     }
-
-    nav.top-menu{
+    nav.top-menu {
         display: none;
     }
     nav.middle-menu {
@@ -81,38 +76,34 @@ footer {
     body {
         padding: 0;
         margin: 0;
-
     }
-    main{
+    main {
         margin: 10px;
     }
-
     section.banner {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
     .banner-grid {
         grid-column: 1 / -1;
         min-height: 230px;
         min-width: 100%;
-        background-color: blueviolet;
+        background-image: url("images/suzanne-scacca-200px.jpg");
+        background-color: cornflowerblue;
 
-     }
-
-     .g-one {
-         background-image: url("images/article.svg");
-     }
-
-     .text {
+    }
+    .g-one {
+        background-image: url("images/article.svg");
+    }
+    .text {
         color: white;
         position: relative;
         top: 90px;
-     }
+    }
 
-     section.gera a.gear{
-        background-color : indigo;
+    .article-header {
         height: 350px;
+        background-color: cornflowerblue;
     }
 
     .menu-wrap .hamburger {
@@ -120,72 +111,58 @@ footer {
         width: 100%;
         z-index: 1;
         background: orangered;
-
     }
-
     section.latest-news {
         margin: 55px 0 0 0;
     }
-
     section.latest-news figure {
         margin: 30px 0 0 0;
         padding: 0;
-
     }
-
     section.latest-news > figure > a > img {
         width: 45px;
     }
-
     section.latest-news figure figcaption {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
         font-size: smaller;
         float: right;
         width: 85%;
-
     }
-    section.latest-news figure img,figcaption {
+    section.latest-news figure img,
+    figcaption {
         display: inline;
         vertical-align: top;
     }
-
     .some-link {
         background-color: blueviolet;
     }
-
     .article-titles {
         font-size: 1.5rem;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
         color: #f33404;
     }
     .article-titles:hover {
-       color: inherit;
+        color: inherit;
     }
-
-
-
     .funding nav ul {
         padding: 0;
         margin: 25px 0 15px 0;
     }
-
     .funding nav ul li {
         list-style: none;
         color: #f33404;
     }
-
     .funding nav ul li:hover {
         color: black;
     }
-
     li.gear-list {
-        border-bottom:1px solid grey;
+        border-bottom: 1px solid grey;
         border-bottom-width: thin;
         padding: 12px;
     }
-
     footer {
         background-color: rgb(53, 53, 53);
     }
+
 
 }
