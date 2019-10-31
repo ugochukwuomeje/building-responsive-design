@@ -86,58 +86,22 @@ footer {
     main{
         margin: 10px;
     }
-    /* section.banner {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    .gridHeight {
-        grid-column: 1 / -1;
-        height: inherit;
-        color: white;
-    }
-    figure.main-banner {
-
-        background-color: rgb(160, 160, 160);
-        height: 150px;
-        margin: 0;
-
-    }
-
-    figure.top-banner {
-
-        background-color: khaki;
-        margin: 0;
-    }
-
-    figure.lower-banner {
-
-        background-color: lawngreen;
-        margin: 0;
-    } */
 
     section.banner {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .banner-link {
+    .banner-grid {
         grid-column: 1 / -1;
-        min-height: 250px;
+        min-height: 230px;
         min-width: 100%;
-     }
-
-     .a {
-        background-color: blue;
+        background-color: blueviolet;
 
      }
 
-     .b {
-        background-color: cornflowerblue;
-     }
-
-     .c {
-         background-color: darkcyan;
+     .g-one {
+         background-image: url("images/article.svg");
      }
 
      .text {
@@ -145,6 +109,12 @@ footer {
         position: relative;
         top: 90px;
      }
+
+     section.gera a.gear{
+        background-color : indigo;
+        height: 350px;
+    }
+
     .menu-wrap .hamburger {
         display: inline-block;
         width: 100%;
@@ -153,8 +123,12 @@ footer {
 
     }
 
+    section.latest-news {
+        margin: 55px 0 0 0;
+    }
+
     section.latest-news figure {
-        margin: 35px 0 24px 0;
+        margin: 30px 0 0 0;
         padding: 0;
 
     }
@@ -175,8 +149,8 @@ footer {
         vertical-align: top;
     }
 
-    article-titles {
-
+    .some-link {
+        background-color: blueviolet;
     }
 
     .article-titles {
@@ -187,6 +161,8 @@ footer {
     .article-titles:hover {
        color: inherit;
     }
+
+
 
     .funding nav ul {
         padding: 0;
