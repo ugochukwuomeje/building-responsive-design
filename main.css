@@ -1,3 +1,190 @@
+/* html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav.top-menu {
+    background-color: black;
+    margin-top: -16px;
+}
+
+nav.top-menu ul {
+    padding: 12px;
+}
+
+nav.top-menu ul li {
+    list-style: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav.top-menu ul li a {
+    text-decoration: none;
+    color: #999;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+nav.top-menu ul li a:hover {
+    color: white;
+}
+
+nav.middle-menu {
+    mask-position: top;
+    background: white;
+    padding: 0.5px;
+    margin-top: -15px;
+}
+
+nav.middle-menu ul{
+
+    display: flex;
+    justify-content: start;
+}
+
+nav.middle-menu ul li {
+    list-style: none;
+    display: inline;
+}
+
+nav.middle-menu ul li a {
+    font-family: Shentox,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #aaa;
+    height: 48px;
+    line-height: 1;
+    padding: 18px 0 0 10px;
+    vertical-align: baseline;
+
+}
+
+section.banner {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row-gap: 5px;
+}
+
+.menu-wrap {
+    display: none;
+}
+
+footer {
+    background-color: rgb(53, 53, 53); */
+}
+
+/*@media all and (max-width: 768px) {
+     body {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 0.9rem;
+    }
+    nav.top-menu {
+        display: none;
+    }
+    nav.middle-menu {
+        display: none;
+    }
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    main {
+        margin: 10px;
+    }
+    section.banner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .banner-grid {
+        grid-column: 1 / -1;
+        min-height: 230px;
+        min-width: 100%;
+        background: url("images/suzanne-scacca-200px.jpg");
+        background-color: cornflowerblue;
+
+    }
+    .g-one {
+        background-image: url("images/article.svg");
+    }
+    .text {
+        color: white;
+        position: relative;
+        top: 90px;
+    }
+
+    .article-header {
+        height: 350px;
+        background-color: cornflowerblue;
+    }
+
+    .menu-wrap .hamburger {
+        display: inline-block;
+        width: 100%;
+        z-index: 1;
+        background: orangered;
+    }
+    section.latest-news {
+        margin: 55px 0 0 0;
+    }
+    section.latest-news figure {
+        margin: 30px 0 0 0;
+        padding: 0;
+    }
+    section.latest-news > figure > a > img {
+        width: 45px;
+    }
+    section.latest-news figure figcaption {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: smaller;
+        float: right;
+        width: 85%;
+    }
+    section.latest-news figure img,
+    figcaption {
+        display: inline;
+        vertical-align: top;
+    }
+    .some-link {
+        background-color: blueviolet;
+    }
+    .article-titles {
+        font-size: 1.5rem;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: #f33404;
+    }
+    .article-titles:hover {
+        color: inherit;
+    }
+    .funding nav ul {
+        padding: 0;
+        margin: 25px 0 15px 0;
+    }
+    .funding nav ul li {
+        list-style: none;
+        color: #f33404;
+    }
+    .funding nav ul li:hover {
+        color: black;
+    }
+    li.gear-list {
+        border-bottom: 1px solid grey;
+        border-bottom-width: thin;
+        padding: 12px;
+    }
+    footer {
+        background-color: rgb(53, 53, 53);
+    } */
+
+
+}
+
 html,
 body {
     padding: 0;
@@ -81,20 +268,72 @@ footer {
 
 @media all and (max-width: 768px) {
     body {
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 0.9rem;
-        padding: 0;
         margin: 0;
+        padding: 0;
+         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 0.9rem;
     }
 
+    nav.top-menu, nav.middle-menu {
+        display: none;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    section.banner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+     .banner-grid {
+        grid-column: 1 / -1;
+        min-height: 230px;
+        min-width: 100%;
+    }
+
+    .g-one {
+        background: linear-gradient(to bottom right, rgba(255, 0,0,1), rgba(0,0,0,0) ), url(images/hammer.jpg);
+    }
+
+    .g-two {
+         background: linear-gradient(to bottom right, rgba(0, 0,0,0.4), rgba(0,0,0,0.4) ), url(images/hide-apple-music-header-image-796x417.png);
+
+    }
+
+    .g-three {
+        background: linear-gradient(to bottom right, rgba(0, 0,0,0.4), rgba(0,0,0,0.4) ), url(images/google-healthcare-796x417.png);
+    }
+
+    .article-titles {
+        font-size: 1.5rem;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: #f33404;
+    }
+
+    .article-titles:hover {
+        color: inherit;
+    }
+
+    section.la
+
+
+    /* body {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 0.9rem;
+    }
     nav.top-menu {
         display: none;
     }
-
     nav.middle-menu {
         display: none;
     }
-
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+    }
     main {
         margin: 10px;
     }
@@ -106,44 +345,23 @@ footer {
         grid-column: 1 / -1;
         min-height: 230px;
         min-width: 100%;
-        background-image: url("images/suzanne-scacca-200px.jpg");
+        background: url("images/suzanne-scacca-200px.jpg");
         background-color: cornflowerblue;
 
     }
     .g-one {
-        background: linear-gradient(to bottom right, rgba(255, 0,0,1), rgba(0,0,0,0) ), url(images/hammer.jpg);
-        background-size: cover;
+        background-image: url("images/article.svg");
     }
-
-    .g-two {
-        background: linear-gradient(to bottom right, rgba(0, 0,0,0.4), rgba(0,0,0,0.4) ), url(images/hide-apple-music-header-image-796x417.png);
-        background-size: cover;
-
-    }
-
-    .g-three {
-        background: linear-gradient(to bottom right, rgba(0, 0,0,0.4), rgba(0,0,0,0.4) ), url(images/google-healthcare-796x417.png);
-        background-size: cover;
-    }
-
     .text {
         color: white;
         position: relative;
         top: 90px;
     }
 
-    .link-gear-article {
-        background: linear-gradient(to bottom right, rgba(0, 0,0,0.4), rgba(0,0,0,0.4) ), url(images/google-healthcare-796x417.png);
+    .article-header {
         height: 350px;
+        background-color: cornflowerblue;
     }
-
-    .link-gear-article > p {
-        color: white;
-        position: relative;
-        top: 200px;
-    }
-
-
 
     .menu-wrap .hamburger {
         display: inline-block;
@@ -155,32 +373,22 @@ footer {
         margin: 55px 0 0 0;
     }
     section.latest-news figure {
-        display: grid;
-        grid-template-columns: 25% 75%;
-        max-width: 100%;
-        margin-inline: 10px;
-
+        margin: 30px 0 0 0;
+        padding: 0;
     }
     section.latest-news > figure > a > img {
-        width: 75px;
-        height: 75px;
+        width: 45px;
     }
     section.latest-news figure figcaption {
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
         font-size: smaller;
-
+        float: right;
+        width: 85%;
     }
-
-
-.gear-link {
-    background: linear-gradient(to bottom right, rgba(255, 0,0,1), rgba(0,0,0,0) ), url(images/8.jpg);
-}
-
-
-    /* section.latest-news figure img,
+    section.latest-news figure img,
     figcaption {
         display: inline;
-        vertical-align: top; */
+        vertical-align: top;
     }
     .some-link {
         background-color: blueviolet;
@@ -190,29 +398,20 @@ footer {
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
         color: #f33404;
     }
-
     .article-titles:hover {
         color: inherit;
     }
-
     .funding nav ul {
         padding: 0;
         margin: 25px 0 15px 0;
     }
-
     .funding nav ul li {
         list-style: none;
         color: #f33404;
     }
-
-    figure.cell-1.  {
-
+    .funding nav ul li:hover {
+        color: black;
     }
-
-
-
-
-
     li.gear-list {
         border-bottom: 1px solid grey;
         border-bottom-width: thin;
@@ -220,16 +419,15 @@ footer {
     }
     footer {
         background-color: rgb(53, 53, 53);
-    }
+    } */
 
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
-    body,
-    html {
+    body, html {
 
         padding: 0;
         margin:0;
@@ -301,11 +499,6 @@ footer {
         padding-left: 1em;
         font-weight: bold;
 
-    }
-
-    figure.celll-1 > img {
-        width: 349px;
-        height: auto;
     }
 
     section.banner .g-one .inner-g-one .info-des .banner-title-info{
@@ -454,7 +647,6 @@ footer {
 
         width: 95%;
     }
-    /**********************this is the first line of the grid**************************/
 
     section.latest-news figure{
         width: 100%;
@@ -486,7 +678,6 @@ footer {
     }
 
 
-    /**this is the second line of the grid******************************************/
      section.latest-news .cell-5{
 
        grid-column: 1/2;
@@ -648,7 +839,7 @@ section.funding .horizontal-grid-info .forth-info
 div.essai, div.gear2{
 
     display: flex;
-    width: 95%;
+    width: auto;
     margin: auto;
 }
 
@@ -851,4 +1042,4 @@ section.gear article ul li a{
 
     }
 
-  }
+}
