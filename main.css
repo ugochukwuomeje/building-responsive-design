@@ -20,7 +20,7 @@ nav.top-menu ul {
 .top-menu ul li {
   margin-right: 1em;
   list-style-type: none;
-  font-family: Arial, Helvetica;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav.top-menu ul li {
@@ -66,6 +66,13 @@ section.lower-grid article ul li a {
   font-weight: 500;
 }
 
+section.latest-news figure figcaption p a {
+  font-weight: bolder;
+  font-size: 1.1em;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 section.banner .g-two h6 a {
   padding-left: 15px;
   color: white;
@@ -75,13 +82,6 @@ section.banner .g-two h6 a {
 footer .baselink ul li a:hover {
   text-decoration: none;
   color: aliceblue;
-}
-
-section.latest-news figure figcaption p a {
-  font-weight: bolder;
-  font-size: 1.1em;
-  color: black;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 nav.top-menu ul li a:hover {
@@ -174,7 +174,7 @@ section.banner .g-one .inner-g-one .info-des .banner-title-desc {
 
 section.banner .g-two {
   grid-row: 1/2;
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(images/hide-apple-music-header-image-796x417.png);
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/hide-apple-music-header-image-796x417.png);
   height: 100%;
   background-size: 100% 100%;
   z-index: 1;
@@ -809,6 +809,7 @@ footer .copyright .heart {
     line-height: 1em;
     margin-top: -0.5em;
   }
+
   section.banner .g-three {
     background: linear-gradient( to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/google-healthcare-796x417.png);
     height: 100%;
@@ -896,6 +897,7 @@ footer .copyright .heart {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
   }
+
   div.essai .latest-middle,
   div.essai .lower-grid .latest-middle {
     display: flex;
