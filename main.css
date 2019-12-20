@@ -56,10 +56,32 @@ nav.middle-menu ul li a {
   vertical-align: baseline;
 }
 
+section.gear article ul li a,
+section.podium article ul li a,
+section.lower-grid article ul li a {
+  color: #666;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.75em;
+  line-height: 0.4rem;
+  font-weight: 500;
+}
+
 section.banner .g-two h6 a {
   padding-left: 15px;
   color: white;
   font-family: Arial, sans-serif;
+}
+
+footer .baselink ul li a:hover {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+section.latest-news figure figcaption p a {
+  font-weight: bolder;
+  font-size: 1.1em;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 nav.top-menu ul li a:hover {
@@ -108,12 +130,7 @@ section.banner {
 section.banner .g-one {
   grid-column: 1/2;
   grid-row: 1/3;
-  background: linear-gradient(
-      to bottom right,
-      rgba(255, 0, 0, 1),
-      rgba(0, 0, 0, 0)
-    ),
-    url(images/hammer.jpg);
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 1), rgba(0, 0, 0, 0)), url(images/hammer.jpg);
   height: 100%;
   background-size: 100% 100%;
   z-index: 1;
@@ -184,17 +201,19 @@ section.banner .banner-grid .banner-link-author {
   margin-top: -1.3em;
 }
 
-section.latest-news figure figcaption p a {
-  font-weight: bolder;
-  font-size: 1.1em;
-  color: black;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
 section.banner .g-three h6 {
   color: white;
   font-family: Arial, sans-serif;
   margin-bottom: 3em;
+}
+
+section.latest-news figure figcaption small {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 18px;
+  display: block;
+  margin-top: -0.7em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
 }
 
 section.banner .banner-grid .banner-link-author small {
@@ -221,12 +240,7 @@ section.banner .g-two .text p {
 section.banner .g-three {
   grid-row: 2/3;
   grid-column: 2/3;
-  background: linear-gradient(
-      to bottom right,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url(images/google-healthcare-796x417.png);
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/google-healthcare-796x417.png);
   height: 100%;
   background-size: 100% 100%;
   z-index: 1;
@@ -261,33 +275,21 @@ section.latest-news .article-titles {
   margin-top: -1em;
 }
 
-section.latest-news figure {
-  position: relative;
-}
-
 section.latest-news figure figcaption p a:hover {
   color: #f33404;
   text-decoration: underline;
 }
 
-section.latest-news figure figcaption small {
-  color: #aaa;
-  font-size: 12px;
-  line-height: 18px;
-  display: block;
-  margin-top: -0.7em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
 section.latest-news img {
   width: 95%;
 }
-/**********************this is the first line of the grid**************************/
+
+/********************** this is the first line of the grid **************************/
 
 section.latest-news figure {
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 section.latest-news .cell-1 {
@@ -309,7 +311,8 @@ section.latest-news .cell-4 {
   grid-column: 4/5;
   grid-row: 1/2;
 }
-/**this is the second line of the grid******************************************/
+
+/** this is the second line of the grid ******************************************/
 
 section.latest-news .cell-5 {
   grid-column: 1/2;
@@ -341,6 +344,23 @@ section.funding nav ul {
   list-style-type: none;
 }
 
+
+footer .baselink ul li {
+  list-style-type: none;
+  margin-right: 1.4em;
+  color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+
+section.gear article ul li,
+section.podium article ul li,
+section.lower-grid article ul li {
+  border-bottom: solid 1px #fdebe6;
+  padding: 0.5em 0 0.5em 0;
+  list-style-type: none;
+}
+
 section.funding nav ul li:first-child {
   flex-grow: 1;
 }
@@ -355,22 +375,15 @@ section.funding nav ul li:first-child a {
 
 section.funding nav ul li.funding-link {
   margin-right: 23px;
-  font-size: 16px;
   color: #f33404;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.2em;
 }
 
-section.funding nav ul li.funding-link {
-  margin-right: 23px;
-  font-size: 16px;
-}
-
 section.funding nav ul li.funding-link a {
   box-sizing: border-box;
   margin-right: 1px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1em;
   border-right: solid 2px #f33404;
   padding-right: 10px;
@@ -386,6 +399,28 @@ section.funding .horizontal-grid-info {
   display: flex;
 }
 
+.ribbon div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+
+footer .social-icon div {
+  border-radius: 50px;
+  background: #333;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: center;
+}
+
 section.funding .horizontal-grid-info > div {
   margin-right: 20px;
   background: url(images/otherbg.PNG);
@@ -396,8 +431,7 @@ section.funding .horizontal-grid-info .first-info {
   background-color: #f33404;
   text-align: center;
   color: white;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: 700;
   padding-top: 10px;
   vertical-align: center;
@@ -430,8 +464,7 @@ section.funding .horizontal-grid-info .third-info {
   padding-top: 5px;
   font-size: 0.9em;
   color: #555;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   border-bottom: solid 1px #f8d9d1;
 }
 
@@ -441,8 +474,7 @@ section.funding .horizontal-grid-info .forth-info {
   padding-bottom: 6em;
   color: #555;
   font-size: 0.8em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 div.essai {
@@ -486,64 +518,56 @@ div.essai .lower-grid .img-gear {
 
 div.essai .gear .img-gear1 {
   padding-top: 4.5em;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
-    url(images/grid2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(images/grid2.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 div.essai .gear .img-gear2 {
   padding-top: 3em;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
-    url(images/secondgrid.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(images/secondgrid.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 div.essai .gear .img-gear3 {
   padding-top: 3em;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
-    url(images/thirdgrid.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(images/thirdgrid.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 div.essai .podium .img-gear4 {
   padding-top: 4.5em;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
-    url(images/grid2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(images/grid2.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 div.essai .podium .img-gear5 {
   padding-top: 4.5em;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
-    url(images/grid2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(images/grid2.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 div.essai .podium .img-gear6 {
   padding-top: 4.5em;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
-    url(images/grid2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(images/grid2.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 div.essai .lower-grid .img-gear7 {
   padding-top: 4.5em;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
-    url(images/grid2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(images/grid2.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 div.essai .lower-grid .img-gear8 {
   padding-top: 4.5em;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
-    url(images/grid2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(images/grid2.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -556,7 +580,7 @@ div.essai .gear .img-gear .text-link {
 div.essai .gear .img-gear .text-link h6,
 div.essai .podium .img-gear .text-link h6,
 div.essai .lower-grid .img-gear .text-link h6 {
-  font-family: Agency FB;
+  font-family: Agency FB, sans-serif;
   color: white;
   font-size: 1em;
   margin-left: 0.5em;
@@ -634,6 +658,13 @@ div.essai .lower-grid .latest-middle .latest p:last-child {
   margin-left: 10px;
 }
 
+footer .copyright p img {
+  width: 2.8em;
+  height: 1.4em;
+  vertical-align: center;
+  display: inline-block;
+}
+
 div.essai .gear .latest-middle .latest-img img,
 div.essai .podium .latest-middle .latest-img img,
 div.essai .lower-grid .latest-middle .latest-img img {
@@ -646,14 +677,6 @@ div.essai article {
   width: 73%;
 }
 
-section.gear article ul li,
-section.podium article ul li,
-section.lower-grid article ul li {
-  border-bottom: solid 1px #fdebe6;
-  padding: 0.5em 0 0.5em 0;
-  list-style-type: none;
-}
-
 section.gear article ul li::before,
 section.podium article ul li::before,
 section.lower-grid article ul li::before {
@@ -663,16 +686,6 @@ section.lower-grid article ul li::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
-}
-
-section.gear article ul li a,
-section.podium article ul li a,
-section.lower-grid article ul li a {
-  color: #666;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.75em;
-  line-height: 0.4rem;
-  font-weight: 500;
 }
 
 .ribbon {
@@ -691,19 +704,6 @@ section.lower-grid article ul li a {
   z-index: 10;
 }
 
-.ribbon div {
-  transform: rotate(45deg);
-  font-size: 14px;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-  left: 8px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  top: 20px;
-  width: 100%;
-}
-
 footer {
   background-color: #131313;
   text-align: center;
@@ -718,23 +718,9 @@ footer .social-icon {
 
 footer .social-icon figure {
   width: 70px;
-  margin-right: 0px;
+  margin-right: 0;
   margin-left: 5px;
   text-align: center;
-}
-
-footer .social-icon div a i {
-  color: #efefef;
-  margin-top: 0.7em;
-}
-
-footer .social-icon div {
-  border-radius: 50px;
-  background: #333;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  vertical-align: center;
 }
 
 footer .social-icon div:hover {
@@ -751,25 +737,6 @@ footer figure figcaption {
   font-family: "Courier New", Courier, monospace;
 }
 
-footer .baselink ul {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2em;
-}
-
-footer .baselink ul li {
-  list-style-type: none;
-  margin-right: 1.4em;
-  color: #999;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8em;
-}
-
-footer .baselink ul li a:hover {
-  text-decoration: none;
-  color: aliceblue;
-}
-
 footer .copyright {
   background: #000;
   padding-top: 0.7em;
@@ -783,17 +750,11 @@ footer .copyright span {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-footer .copyright p img {
-  width: 2.8em;
-  height: 1.4em;
-  vertical-align: center;
-  display: inline-block;
-}
-
 footer .copyright .heart {
   color: #f33404;
 }
-/**** start responsive********/
+
+/**** start responsive ********/
 
 @media screen and (max-width: 1024px) {
   section.banner {
@@ -801,6 +762,7 @@ footer .copyright .heart {
     width: 100%;
     box-sizing: border-box;
   }
+
   section.banner .g-one {
     grid-column: 1/2;
     grid-row: 1/3;
@@ -809,35 +771,36 @@ footer .copyright .heart {
     background-size: 100%;
     z-index: 1;
   }
+
   section.banner .g-one .inner-g-one .imgdate-section {
     display: none;
   }
+
   section.banner .g-one .inner-g-one {
     background: url(images/image-gradient.png) repeat-x;
     background-size: 100% 80%;
     height: 95%;
   }
+
   section.banner .g-one .inner-g-one .info-des .banner-title-desc {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.4em;
     margin-top: 1em;
   }
+
   section.banner .g-one .inner-g-one .banner-autor {
     color: #efefef;
     margin-left: 10px;
     margin-top: 15px;
   }
+
   section.banner .g-two {
-    background: linear-gradient(
-        to bottom right,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-      ),
-      url(images/hide-apple-music-header-image-796x417.png);
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/hide-apple-music-header-image-796x417.png);
     height: 95%;
     background-size: 100% 100%;
     z-index: 1;
   }
+
   section.banner .g-two .text p {
     padding-left: 30px;
     color: white;
@@ -847,47 +810,48 @@ footer .copyright .heart {
     margin-top: -0.5em;
   }
   section.banner .g-three {
-    background: linear-gradient(
-        to bottom right,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-      ),
-      url(images/google-healthcare-796x417.png);
+    background: linear-gradient( to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/google-healthcare-796x417.png);
     height: 100%;
     background-size: 100% 100%;
     z-index: 1;
     margin-top: -0.5em;
   }
+
   section.banner .g-two .text p {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 1.1em;
     line-height: 1em;
     margin-top: -0.9em;
   }
+
   section.banner .g-three .text p {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 1.1em;
     line-height: 1em;
     margin-top: -1.2em;
   }
+
   section.banner .g-three .banner-link-author {
     padding-bottom: 1em;
   }
+
   section.latest-news {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     grid-template-rows: auto auto;
   }
-  /**********************this is the first line of the grid**************************/
+
   section.latest-news figure {
     width: 100%;
     box-sizing: border-box;
   }
+
   section.latest-news .cell-1 {
     grid-column: 1/2;
     grid-row: 1/2;
     width: 100%;
   }
+
   section.latest-news .cell-2 {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -896,31 +860,36 @@ footer .copyright .heart {
     grid-column: 3/4;
     grid-row: 1/2;
   }
-  /**this is the second line of the grid******************************************/
+
   section.latest-news .cell-4 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
+
   section.latest-news .cell-5 {
     grid-column: 2/3;
     grid-row: 2/3;
   }
+
   section.latest-news .cell-6 {
     grid-column: 3/4;
     grid-row: 2/3;
   }
-  /**this is the thrid line of the grid******************************************/
+
   section.latest-news .cell-7 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
+
   section.latest-news .cell-8 {
     grid-column: 2/3;
     grid-row: 3/4;
   }
+
   section.funding .horizontal-grid-info .funding-grid4 {
     display: none;
   }
+
   div.essai,
   div.gear2 {
     display: grid;
@@ -940,6 +909,7 @@ footer .copyright .heart {
   .body {
     background: #efefef;
   }
+
   section.banner {
     display: grid;
     grid-template-columns: 100%;
@@ -947,6 +917,7 @@ footer .copyright .heart {
     grid-row-gap: 1em;
     margin-top: -1.5em;
   }
+
   section.banner .g-one {
     grid-row: 1/2;
     grid-column: 1/2;
@@ -955,120 +926,143 @@ footer .copyright .heart {
     height: 100%;
     z-index: 1;
   }
+
   section.banner .g-one .inner-g-one {
     background: url(images/image-gradient.png);
     background-repeat: no-repeat;
     background-size: 100% 65%;
     height: 100%;
   }
+
   section.banner .g-two {
     grid-row: 2/3;
     grid-column: 1/2;
     margin-top: 0.1em;
   }
+
   section.banner .g-three {
     grid-row: 3/4;
     grid-column: 1/2;
     margin-top: -1.3em;
   }
+
   section.banner .g-one .inner-g-one .info-des .banner-title-desc {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2em;
     font-weight: 1000;
     line-height: 1em;
   }
+
   section.latest-news {
     display: grid;
     grid-template-rows: repeat(8, 10%);
     grid-template-columns: 100%;
     margin-top: 8em;
   }
+
   section.latest-news .article-titles {
     font-size: 1.5em;
   }
-  /******************************This point is for *******************/
-  section.latest-news figure {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-  }
+
   section.latest-news .cell-1 {
     grid-column: 1/2;
     grid-row: 1/2;
   }
+
   section.latest-news .cell-2 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
+
   section.latest-news .cell-3 {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  /**this is the second line of the grid******************************************/
+
   section.latest-news .cell-4 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
+
   section.latest-news .cell-5 {
     grid-column: 1/2;
     grid-row: 5/6;
   }
+
   section.latest-news .cell-6 {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-  /**this is the thrid line of the grid******************************************/
+
   section.latest-news .cell-7 {
     grid-column: 1/2;
     grid-row: 7/8;
   }
+
   section.latest-news .cell-8 {
     grid-column: 1/2;
     grid-row: 8/9;
   }
+
   section.latest-news figure {
     display: flex;
     justify-content: start;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0;
   }
+
   section.latest-news figure a {
     box-sizing: border-box;
     width: 15%;
     text-align: start;
   }
+
   section.latest-news figure figcaption {
     text-align: left;
     font-size: 0.8em;
   }
+
   section.latest-news figure a img {
     height: 100%;
     width: 90%;
   }
+
+  footer .baselink ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+  }
+
   section.funding nav ul {
     flex-direction: column;
   }
+
   section.funding nav ul li {
     margin-top: 1em;
   }
+
   section.funding nav ul li a {
     margin-top: 1em;
   }
+
   section.funding nav ul li.funding-link a {
     box-sizing: border-box;
     margin-right: 1px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-size: 1em;
     border-right: none;
     padding-right: 10px;
     line-height: 15px;
     font-weight: 100;
   }
+
   section.funding .horizontal-grid-info {
     display: flex;
     flex-direction: column;
   }
+
   div.essai {
     display: grid;
     grid-template-rows: repeat(8, 12%);
@@ -1076,38 +1070,47 @@ footer .copyright .heart {
     margin: auto;
     grid-row-gap: 6em;
   }
+
   div.essai .gear1 {
     grid-column: 1/13;
     grid-row: 1/2;
   }
+
   div.essai .gear2 {
     grid-column: 1/13;
     grid-row: 2/3;
   }
+
   div.essai .gear3 {
     grid-column: 1/13;
     grid-row: 3/4;
   }
+
   div.essai .gear4 {
     grid-column: 1/13;
     grid-row: 4/5;
   }
+
   div.essai .gear5 {
     grid-column: 1/13;
     grid-row: 5/6;
   }
+
   div.essai .gear6 {
     grid-column: 1/13;
     grid-row: 6/7;
   }
+
   div.essai .gear7 {
     grid-column: 1/13;
     grid-row: 7/8;
   }
+
   div.essai .gear8 {
     grid-column: 1/13;
     grid-row: 8/9;
   }
+
   div.essai .gear .img-gear,
   div.essai .podium .img-gear,
   div.essai .lower-grid .img-gear {
@@ -1118,72 +1121,77 @@ footer .copyright .heart {
     width: 100%;
     height: 50%;
   }
+
   div.essai .gear .latest-middle,
   div.essai .podium .latest-middle,
   div.essai .lower-grid .latest-middle {
     width: 100%;
   }
+
   section.last {
     margin-top: 80%;
   }
+
   section.last .ribbon {
     display: none;
   }
+
   .top-menu .forresponsive a i {
     font-size: 1.5em;
   }
+
+  nav.top-menu ul li.search-icon ul li a i {
+    margin-top: 1em;
+  }
+
   .top-menu .forresponsive:last-child a i {
     color: #f33404;
   }
+
   .navsection {
-    padding: 0px;
+    padding: 0;
   }
+
   .navsection .middle-menu {
     display: none;
   }
+
   .navsection .top-menu {
     width: 100%;
   }
+
   nav.top-menu {
     background-color: white;
     color: #333;
     height: 74px;
     margin-bottom: 2em;
   }
-  nav.top-menu ul {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 0 15px 0;
-  }
+
   nav.top-menu ul li.search-icon {
     display: inline;
   }
+
   nav.top-menu ul li.search-icon ul {
     vertical-align: middle;
     height: 74px;
     box-sizing: border-box;
   }
+
   nav.top-menu ul li.search-icon ul li {
     border-left: solid 1px #efefef;
     padding: 0.6em;
     height: 74px;
     text-align: center;
   }
-  nav.top-menu ul li.search-icon ul li a i {
-    margin-top: 1em;
-  }
+
   .top-menu .resposive-logo {
-    background: linear-gradient(
-      to bottom right,
-      rgba(255, 0, 0, 1),
-      rgba(0, 0, 0, 0)
-    );
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 1), rgba(0, 0, 0, 0));
   }
+
   .top-menu ul .resposive-logo {
     display: block;
   }
+
   .top-menu .responsive {
     display: none;
   }
