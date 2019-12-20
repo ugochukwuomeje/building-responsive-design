@@ -801,15 +801,6 @@ footer .copyright .heart {
     z-index: 1;
   }
 
-  section.banner .g-two .text p {
-    padding-left: 30px;
-    color: white;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 1.1em;
-    line-height: 1em;
-    margin-top: -0.5em;
-  }
-
   section.banner .g-three {
     background: linear-gradient( to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/google-healthcare-796x417.png);
     height: 100%;
@@ -857,6 +848,7 @@ footer .copyright .heart {
     grid-column: 2/3;
     grid-row: 1/2;
   }
+
   section.latest-news .cell-3 {
     grid-column: 3/4;
     grid-row: 1/2;
