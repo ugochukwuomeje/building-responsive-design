@@ -911,6 +911,8 @@ footer .social-icon div:hover {
 @media screen and (max-width: 767px) {
   .body {
     background: #efefef;
+    padding: 0;
+    margin: 0;
   }
 
   section.banner {
@@ -967,11 +969,6 @@ footer .social-icon div:hover {
     font-size: 1.5em;
   }
 
-  section.latest-news .cell-1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
   section.latest-news .cell-2 {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -1008,23 +1005,20 @@ footer .social-icon div:hover {
   }
 
   section.latest-news figure {
-    display: flex;
-    justify-content: start;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    vertical-align: top;
   }
 
   section.latest-news figure a {
-    box-sizing: border-box;
-    width: 15%;
-    text-align: start;
+    max-width: fit-content;
+    max-height: 90%;
   }
 
   section.latest-news figure figcaption {
     text-align: left;
     font-size: 0.8em;
+    max-width: 80%;
   }
 
   section.latest-news figure a img {
