@@ -84,6 +84,98 @@ footer .baselink ul li a:hover {
   color: aliceblue;
 }
 
+footer {
+  background-color: #131313;
+  text-align: center;
+  width: 100%;
+}
+
+footer .social-icon {
+  display: flex;
+  padding-top: 2em;
+  justify-content: center;
+}
+
+footer .social-icon figure {
+  width: 70px;
+  margin-right: 0;
+  margin-left: 5px;
+  text-align: center;
+}
+
+footer .social-icon div a i {
+  color: #efefef;
+  margin-top: 0.7em;
+}
+
+.ribbon div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+
+footer .social-icon div {
+  border-radius: 50px;
+  background: #333;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: center;
+}
+
+footer figure figcaption {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer .baselink ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+footer .baselink ul li {
+  list-style-type: none;
+  margin-right: 1.4em;
+  color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+
+footer .copyright {
+  background: #000;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  vertical-align: center;
+}
+
+footer .copyright span {
+  color: #aaa;
+  font-size: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.latest-news img {
+  width: 95%;
+}
+
+footer .copyright p img {
+  width: 2.8em;
+  height: 1.4em;
+  vertical-align: center;
+  display: inline-block;
+}
+
+footer .copyright .heart {
+  color: #f33404;
+}
+
 nav.top-menu ul li a:hover {
   color: white;
 }
@@ -213,7 +305,7 @@ section.latest-news figure figcaption small {
   line-height: 18px;
   display: block;
   margin-top: -0.7em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande","Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 section.banner .banner-grid .banner-link-author small {
@@ -280,10 +372,6 @@ section.latest-news figure figcaption p a:hover {
   text-decoration: underline;
 }
 
-section.latest-news img {
-  width: 95%;
-}
-
 /********************** this is the first line of the grid **************************/
 
 section.latest-news figure {
@@ -344,15 +432,6 @@ section.funding nav ul {
   list-style-type: none;
 }
 
-
-footer .baselink ul li {
-  list-style-type: none;
-  margin-right: 1.4em;
-  color: #999;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8em;
-}
-
 section.gear article ul li,
 section.podium article ul li,
 section.lower-grid article ul li {
@@ -397,28 +476,6 @@ section.funding nav ul li.funding-link a:hover {
 
 section.funding .horizontal-grid-info {
   display: flex;
-}
-
-.ribbon div {
-  transform: rotate(45deg);
-  font-size: 14px;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-  left: 8px;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  top: 20px;
-  width: 100%;
-}
-
-footer .social-icon div {
-  border-radius: 50px;
-  background: #333;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  vertical-align: center;
 }
 
 section.funding .horizontal-grid-info > div {
@@ -658,13 +715,6 @@ div.essai .lower-grid .latest-middle .latest p:last-child {
   margin-left: 10px;
 }
 
-footer .copyright p img {
-  width: 2.8em;
-  height: 1.4em;
-  vertical-align: center;
-  display: inline-block;
-}
-
 div.essai .gear .latest-middle .latest-img img,
 div.essai .podium .latest-middle .latest-img img,
 div.essai .lower-grid .latest-middle .latest-img img {
@@ -704,25 +754,6 @@ section.lower-grid article ul li::before {
   z-index: 10;
 }
 
-footer {
-  background-color: #131313;
-  text-align: center;
-  width: 100%;
-}
-
-footer .social-icon {
-  display: flex;
-  padding-top: 2em;
-  justify-content: center;
-}
-
-footer .social-icon figure {
-  width: 70px;
-  margin-right: 0;
-  margin-left: 5px;
-  text-align: center;
-}
-
 footer .social-icon div:hover {
   border-radius: 50px;
   background: #000;
@@ -733,29 +764,7 @@ footer .social-icon div:hover {
   border: solid 1px #aaa;
 }
 
-footer figure figcaption {
-  font-family: "Courier New", Courier, monospace;
-}
-
-footer .copyright {
-  background: #000;
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
-  vertical-align: center;
-}
-
-footer .copyright span {
-  color: #aaa;
-  font-size: 0.8em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-footer .copyright .heart {
-  color: #f33404;
-}
-
 /**** start responsive ********/
-
 @media screen and (max-width: 1024px) {
   section.banner {
     height: 90%;
@@ -802,7 +811,7 @@ footer .copyright .heart {
   }
 
   section.banner .g-three {
-    background: linear-gradient( to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/google-healthcare-796x417.png);
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/google-healthcare-796x417.png);
     height: 100%;
     background-size: 100% 100%;
     z-index: 1;
