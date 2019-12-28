@@ -28,6 +28,11 @@ nav.top-menu ul li {
   display: inline;
 }
 
+img.logo-img {
+  width: 100%;
+  height: 100%;
+}
+
 nav.top-menu ul li.search-icon {
   display: none;
 }
@@ -921,6 +926,11 @@ footer .social-icon div:hover {
     margin: 0;
   }
 
+  img.responsive-img-logo {
+    width: 200px;
+    height: 70px;
+  }
+
   section.banner {
     display: grid;
     grid-template-columns: 100%;
@@ -1068,7 +1078,8 @@ footer .social-icon div:hover {
   }
 
   div.essai section {
-    margin-right: 12px 0 0 0;
+    margin-right: 0;
+    margin-top: 12px;
   }
 
   div.essai {
