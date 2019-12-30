@@ -32,11 +32,11 @@ Use `npm install` to set up all of the dependencies and CSS linters
 
 👤 **Author1**
 
-- Github: [@gitugochukwuomeje](https://github.com/ugochukwuomeje)
+- Github: [ugochukwu](https://github.com/ugochukwuomeje)
 
 👤 **Author2**
 
-- Github: [@gitmuhenge](https://github.com/muhenge)
+- Github: [Herve](https://github.com/muhenge)
 
 ## 🤝 Contributing
 
