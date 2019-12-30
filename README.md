@@ -2,7 +2,7 @@
 
 > This project is from [Microverse](https://www.microverse.org/) main curriculum.
 
-![screenshot](./readme/Firefox_Screenshot_2019-12-30T11-14-17.334Z.png)
+![screenshot](readme/Firefox_Screenshot_2019-12-30T11-14-17.334Z.png)
 
 Additional description about the project and its features.
 
