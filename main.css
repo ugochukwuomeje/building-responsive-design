@@ -931,6 +931,11 @@ footer .social-icon div:hover {
     height: 70px;
   }
 
+  nav.top-menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
   section.banner {
     display: grid;
     grid-template-columns: 100%;
