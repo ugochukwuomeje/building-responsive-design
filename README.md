@@ -4,7 +4,8 @@
 
 ![screenshot](readme/Firefox_Screenshot_2019-12-30T11-14-17.334Z.png)
 
-Additional description about the project and its features.
+This project is about next web clone. It is a responsive website developed with flex box and grid system. It has two break points. The first break point starts from 1024px while the second break point starts from 768px
+
 
 ## Built With
 
