@@ -49,6 +49,11 @@ nav.top-menu ul li a {
   font-weight: bold;
 }
 
+main {
+  padding: 0;
+  margin: 13px;
+}
+
 nav.middle-menu ul li a {
   font-family: Shentox, sans-serif;
   font-weight: 500;
@@ -919,11 +924,12 @@ footer .social-icon div:hover {
     background: #efefef;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
 
   main {
     padding: 0;
-    margin: 0;
+    margin: 13px;
   }
 
   img.responsive-img-logo {
