@@ -49,11 +49,6 @@ nav.top-menu ul li a {
   font-weight: bold;
 }
 
-main {
-  padding: 0;
-  margin: 15px;
-}
-
 nav.middle-menu ul li a {
   font-family: Shentox, sans-serif;
   font-weight: 500;
@@ -66,6 +61,11 @@ nav.middle-menu ul li a {
   vertical-align: baseline;
 }
 
+main {
+  padding: 0;
+  margin: 13px;
+}
+
 section.gear article ul li a,
 section.podium article ul li a,
 section.lower-grid article ul li a {
@@ -76,7 +76,7 @@ section.lower-grid article ul li a {
   font-weight: 500;
 }
 
-section.latest-news div div p a {
+section.latest-news figure figcaption p a {
   font-weight: bolder;
   font-size: 1.1em;
   color: black;
@@ -123,6 +123,7 @@ footer .social-icon div a i {
   font-size: 14px;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
+  left: 8px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -171,7 +172,7 @@ footer .copyright span {
 }
 
 section.latest-news img {
-  width: 100%;
+  width: 95%;
 }
 
 footer .copyright p img {
@@ -192,7 +193,7 @@ nav.top-menu ul li a:hover {
 nav.middle-menu {
   mask-position: top;
   background: white;
-  padding-top: 0.5px;
+  padding: 0.5px;
   margin-top: -15px;
 }
 
@@ -308,7 +309,7 @@ section.banner .g-three h6 {
   margin-bottom: 3em;
 }
 
-section.latest-news div div small {
+section.latest-news figure figcaption small {
   color: #aaa;
   font-size: 12px;
   line-height: 18px;
@@ -361,11 +362,9 @@ section.latest-news {
   grid-template-columns: repeat(4, 3fr);
   grid-template-rows: auto auto;
   grid-gap: 10px;
-  margin: auto;
-  margin-top: 3em;
-  padding-top: 1em;
-  width: 90%;
-  
+  margin-top: 4em;
+  padding-top: 2em;
+  width: 98%;
 }
 
 section.latest-news .article-titles {
@@ -374,26 +373,26 @@ section.latest-news .article-titles {
   color: #f33404;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: absolute;
+  margin-left: 1.2em;
   margin-top: -1em;
 }
 
-section.latest-news div div p a:hover {
+section.latest-news figure figcaption p a:hover {
   color: #f33404;
   text-decoration: underline;
 }
 
 /********************** this is the first line of the grid **************************/
 
-section.latest-news >div {
+section.latest-news figure {
+  width: 100%;
   box-sizing: border-box;
   position: relative;
-  display: block;
 }
 
 section.latest-news .cell-1 {
   grid-column: 1/2;
   grid-row: 1/2;
-  padding: 0;
 }
 
 section.latest-news .cell-2 {
@@ -434,9 +433,8 @@ section.latest-news .cell-8 {
 }
 
 section.funding {
-  width: 90%;
+  width: 95%;
   margin: auto;
-  margin-top: 4em;
 }
 
 section.funding nav ul {
@@ -854,8 +852,8 @@ footer .social-icon div:hover {
     grid-template-rows: auto auto;
   }
 
-  section.latest-news div {
-    width: 90%;
+  section.latest-news figure {
+    width: 100%;
     box-sizing: border-box;
   }
 
@@ -1024,32 +1022,26 @@ footer .social-icon div:hover {
     grid-row: 8/9;
   }
 
-  section.latest-news div {
+  section.latest-news figure {
     display: grid;
-    grid-template-columns: 3fr 9fr;
-    width: 100%;
-    
+    grid-template-columns: 2fr 5fr;
+    vertical-align: top;
   }
 
-  section.latest-news div a {
+  section.latest-news figure a {
     max-width: fit-content;
     max-height: 90%;
   }
 
-  section.latest-news div div {
+  section.latest-news figure figcaption {
+    text-align: left;
     font-size: 0.8em;
-    max-width: 90%;
+    max-width: 80%;
   }
 
-  section.latest-news div div p{
-     display: block;
-     width: 100%;
-  }
-
-
-  section.latest-news div a img {
-    height: 70%;
-    width: 80%;
+  section.latest-news figure a img {
+    height: 100%;
+    width: 90%;
   }
 
   footer .baselink ul {
@@ -1101,7 +1093,7 @@ footer .social-icon div:hover {
     grid-template-rows: repeat(8, 12%);
     grid-template-columns: repeat(1, 12fr);
     margin: auto;
-    grid-row-gap: 2em;
+    grid-row-gap: 6em;
   }
 
   div.essai .gear1 {
