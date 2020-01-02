@@ -360,7 +360,6 @@ section.latest-news {
   margin-top: 3em;
   padding-top: 1em;
   width: 90%;
-  
 }
 
 section.latest-news .article-titles {
@@ -370,7 +369,6 @@ section.latest-news .article-titles {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: absolute;
   margin-top: -1em;
-  
 }
 
 section.latest-news div div p a:hover {
@@ -380,7 +378,7 @@ section.latest-news div div p a:hover {
 
 /********************** this is the first line of the grid **************************/
 
-section.latest-news >div {
+section.latest-news > div {
   box-sizing: border-box;
   position: relative;
   display: block;
@@ -922,6 +920,8 @@ footer .social-icon div:hover {
     background: #efefef;
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   main {
@@ -984,14 +984,10 @@ footer .social-icon div:hover {
     display: grid;
     grid-template-rows: repeat(8, 10%);
     grid-template-columns: 100%;
-   
+    margin-top: 12em;
   }
 
-  section.latest-news {
-     margin-top: 12em;
-  }
-
-    section.latest-news .article-titles {
+  section.latest-news .article-titles {
     font-size: 1.5em;
     margin-top: -2em;
   }
@@ -1031,11 +1027,10 @@ footer .social-icon div:hover {
     grid-row: 8/9;
   }
 
-  section.latest-news >div {
+  section.latest-news > div {
     display: grid;
     grid-template-columns: 3fr 9fr;
     width: 100%;
-    
   }
 
   section.latest-news div a {
@@ -1048,16 +1043,14 @@ footer .social-icon div:hover {
     max-width: 80%;
   }
 
-  section.latest-news div div p{
-     display: block;
-     width: 100%;
-     
+  section.latest-news div div p {
+    display: block;
+    width: 100%;
   }
 
-  section.latest-news div div small{
+  section.latest-news div div small {
     display: inline;
-    
- }
+  }
 
   section.latest-news div a img {
     height: 70%;
