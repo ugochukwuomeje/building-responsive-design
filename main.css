@@ -370,6 +370,7 @@ section.latest-news .article-titles {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: absolute;
   margin-top: -1em;
+  
 }
 
 section.latest-news div div p a:hover {
@@ -983,10 +984,16 @@ footer .social-icon div:hover {
     display: grid;
     grid-template-rows: repeat(8, 10%);
     grid-template-columns: 100%;
+   
   }
 
-  section.latest-news .article-titles {
+  section.latest-news {
+     margin-top: 12em;
+  }
+
+    section.latest-news .article-titles {
     font-size: 1.5em;
+    margin-top: -2em;
   }
 
   section.latest-news .cell-2 {
@@ -1024,7 +1031,7 @@ footer .social-icon div:hover {
     grid-row: 8/9;
   }
 
-  section.latest-news div {
+  section.latest-news >div {
     display: grid;
     grid-template-columns: 3fr 9fr;
     width: 100%;
@@ -1044,8 +1051,13 @@ footer .social-icon div:hover {
   section.latest-news div div p{
      display: block;
      width: 100%;
+     
   }
 
+  section.latest-news div div small{
+    display: inline;
+    
+ }
 
   section.latest-news div a img {
     height: 70%;
@@ -1161,7 +1173,7 @@ footer .social-icon div:hover {
   }
 
   section.last {
-    margin-top: 12%;
+    margin-top: 1em;
   }
 
   section.last .ribbon {
