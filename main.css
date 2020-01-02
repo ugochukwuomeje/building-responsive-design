@@ -51,7 +51,7 @@ nav.top-menu ul li a {
 
 main {
   padding: 0;
-  margin: 13px;
+  margin: 15px;
 }
 
 nav.middle-menu ul li a {
@@ -1041,7 +1041,7 @@ footer .social-icon div:hover {
   section.latest-news figure figcaption {
     text-align: left;
     font-size: 0.8em;
-    max-width: 80%;
+    max-width: 90%;
   }
 
   section.latest-news figure a img {
