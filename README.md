@@ -18,7 +18,7 @@ This project is about next web clone. It is a responsive website developed with 
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ugochukwuomeje.github.io/building-responsive-design/)
 
 
 ## Getting Started
