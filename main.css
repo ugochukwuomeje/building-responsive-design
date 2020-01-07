@@ -180,6 +180,10 @@ footer .copyright .heart {
   color: #f33404;
 }
 
+section.navsection .responsive-logo {
+  display: none;
+}
+
 nav.top-menu ul li a:hover {
   color: white;
 }
@@ -194,11 +198,35 @@ nav.middle-menu {
 nav.middle-menu ul {
   display: flex;
   justify-content: start;
+  border-bottom: solid 1px #ddd;
+  height: 50px;
+  padding: 0;
+  margin-top: -2px;
 }
 
 nav.middle-menu ul li {
   list-style: none;
-  display: inline;
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 15px;
+}
+
+nav.middle-menu ul li.search {
+  flex-grow: 1;
+}
+
+section.gear article ul li,
+section.podium article ul li,
+section.lower-grid article ul li {
+  border-bottom: solid 1px #fdebe6;
+  padding: 0.5em 0 0.5em 0;
+  list-style-type: none;
+}
+
+nav.middle-menu ul li:last-child {
+  text-align: center;
+  width: 70px;
+  border-left: solid 1px #ddd;
 }
 
 .menu-wrap {
@@ -211,6 +239,9 @@ nav.middle-menu ul li {
 
 .top-menu ul .resposive-logo {
   display: none;
+  box-sizing: border-box;
+  padding-top: 0;
+  width: 20%;
 }
 
 section.banner {
@@ -438,14 +469,6 @@ section.funding nav ul {
   list-style-type: none;
 }
 
-section.gear article ul li,
-section.podium article ul li,
-section.lower-grid article ul li {
-  border-bottom: solid 1px #fdebe6;
-  padding: 0.5em 0 0.5em 0;
-  list-style-type: none;
-}
-
 section.funding nav ul li:first-child {
   flex-grow: 1;
 }
@@ -544,8 +567,9 @@ div.essai {
   display: grid;
   grid-template-columns: repeat(3, 4fr);
   grid-template-rows: auto;
+  grid-gap: 10px;
   width: 95%;
-  margin: auto;
+  margin-left: auto;
 }
 
 div.essai section {
@@ -576,7 +600,6 @@ div.essai .lower-grid .img-gear {
   background-size: cover;
   background-position: center;
   padding-top: 4.5em;
-  width: 400px;
 }
 
 div.essai .gear .img-gear1 {
@@ -707,7 +730,7 @@ div.essai .podium .latest-middle .latest p:first-child,
 div.essai .lower-grid .latest-middle .latest p:first-child {
   color: #f33404;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.9em;
+  font-size: 0.7em;
   margin-left: 10px;
 }
 
@@ -716,7 +739,7 @@ div.essai .podium .latest-middle .latest p:last-child,
 div.essai .lower-grid .latest-middle .latest p:last-child {
   color: #f33404;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.9em;
+  font-size: 0.7em;
   font-weight: bolder;
   margin-left: 10px;
 }
@@ -772,6 +795,28 @@ footer .social-icon div:hover {
 
 /**** start responsive ********/
 @media screen and (max-width: 1024px) {
+  section.navsection {
+    display: flex;
+  }
+
+  img.responsive-img-logo {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  section.navsection .menu-container {
+    flex-grow: 1;
+  }
+
+  section.navsection .responsive-logo {
+    display: block;
+    background: red;
+    width: 111px;
+    height: 93px;
+    margin: 0;
+  }
+
   section.banner {
     height: 90%;
     width: 100%;
@@ -924,6 +969,10 @@ footer .social-icon div:hover {
     overflow-x: hidden;
   }
 
+  section.navsection .responsive-logo {
+    display: none;
+  }
+
   main {
     padding: 0;
     margin: 0;
@@ -931,13 +980,16 @@ footer .social-icon div:hover {
   }
 
   img.responsive-img-logo {
-    width: 200px;
-    height: 70px;
+    width: 90%;
+    height: 80%;
+    margin-top: 15px;
   }
 
   nav.top-menu ul {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
   }
 
   section.banner {
